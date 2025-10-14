@@ -11,8 +11,6 @@ I’ve come across some articles that I found really helpful:
 
 [**"What Does a Graphic Designer Do?"**](https://www.coursera.org/articles/what-does-a-graphic-designer-do) – A breakdown of their day-to-day work, career takeaways, and salary info.
 
-[**"What is Graphic Design?"**]((https://www.figma.com/resource-library/what-is-graphic-design/)) – Offers a clear definition along with key elements and the essential skills involved in the field.
-
 With all of these articles in mind, my knowledge and interest in **Graphic Design** have grown exponentially.
 ## 
 
