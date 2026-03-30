@@ -61,14 +61,109 @@ function Card(props) {
 
 ---
 
+
+---
+
+### 03/19/26:
+
+* Explored **state** in React
+* Learned state allows components to remember data
+* Saw `useState` hook example
+
+```jsx
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>{count}</p>
+      <button onClick={() => setCount(count + 1)}>Increase</button>
+    </div>
+  );
+}
+```
+
+* Realized state updates re-render the component
+* Excited about dynamic UIs
+
+---
+
+### 03/20/26:
+
+* Looked at **events** in React
+* Learned JSX uses `onClick`, `onChange` etc.
+* Saw how to handle input forms
+
+```jsx
+function NameInput() {
+  const [name, setName] = useState("");
+
+  return (
+    <input
+      value={name}
+      onChange={(e) => setName(e.target.value)}
+    />
+  );
+}
+```
+
+* Noticed event object `e` carries info
+* Felt forms are easier with controlled components
+
+---
+
+### 03/21/26:
+
+* Explored **conditional rendering**
+* Learned `if` and ternary operator in JSX
+
+```jsx
+function Greeting({ loggedIn }) {
+  return <h1>{loggedIn ? "Welcome back!" : "Please log in"}</h1>;
+}
+```
+
+* Cool to show different content dynamically
+* Helps make interactive pages
+
+---
+
+### 03/22/26:
+
+* Looked at **lists and keys**
+* Learned `map()` to render multiple items
+* Key is required for unique identification
+
+```jsx
+function List() {
+  const items = ["Apple", "Banana", "Cherry"];
+  return (
+    <ul>
+      {items.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  );
+}
+```
+
+* Realized keys prevent rendering bugs
+* Lists make data-driven UI simpler
+
+---
+
 ### Questions
 
-* When should I use React instead of HTML
-* How React connects to CSS
+* How do I manage state across multiple components?
+* When should I use `useEffect`?
 
 ---
 
 ### Next
 
-* Try building a small React component
-* Practice props more
+* Try building a small app with state, props, and events
+* Experiment with conditional rendering
+
+---
