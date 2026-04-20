@@ -152,10 +152,6 @@ function List() {
 * Realized keys prevent rendering bugs
 * Lists make data-driven UI simpler
 
-Got it — let’s fix the timeline and continue your log in a clean GitHub Markdown style, using **Mon/Wed/Fri + “yesterday” (April 19, 2026)**.
-
-Here’s your continued learning log:
-
 ````md
 ---
 
