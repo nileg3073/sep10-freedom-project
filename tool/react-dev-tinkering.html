@@ -1,11 +1,38 @@
-<script>
-function MyButton() {
-    return (
-        <button>I'm a button</button>
-    );
-}
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React in One File</title>
+    <!-- 1. Load React and ReactDOM from a CDN -->
+    <script src="https://unpkg.com"></script>
+    <script src="https://unpkg.com"></script>
+<script src="https://unpkg.com" crossorigin></script>
+<script src="https://unpkg.com" crossorigin></script>
 
+    <!-- 2. Load Babel to compile JSX on the fly -->
+    <script src="https://unpkg.com"></script>
+  </head>
+  <body>
+    <!-- 3. The root element where your app will live -->
+    <div id="root"></div>
 
+    <!-- 4. Your JSX code goes here.
+         IMPORTANT: You must use type="text/babel" -->
+    <script type="text/babel">
+      function App() {
+        return (
+          <div>
+            <h1>Hello, React!</h1>
+            <p>Your JSX is now rendering correctly in a single file.</p>
+          </div>
+        );
+      }
 
-</script>
+      // Render the App component into the root div
+      const container = document.getElementById('root');
+      const root = ReactDOM.createRoot(container);
+      root.render(<App />);
+    </script>
+  </body>
+</html>

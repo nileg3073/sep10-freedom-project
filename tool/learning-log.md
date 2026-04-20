@@ -152,18 +152,116 @@ function List() {
 * Realized keys prevent rendering bugs
 * Lists make data-driven UI simpler
 
+Got it — let’s fix the timeline and continue your log in a clean GitHub Markdown style, using **Mon/Wed/Fri + “yesterday” (April 19, 2026)**.
+
+Here’s your continued learning log:
+
+````md
+---
+
+### 04/13/26 (Monday)
+
+* Started learning **lifting state up**
+* Learned that sometimes multiple components need the same state
+* Moved state to a parent component and passed it down via props
+* This helped keep data in sync
+
+```jsx
+function Parent() {
+  const [value, setValue] = useState("");
+
+  return (
+    <>
+      <Input value={value} onChange={setValue} />
+      <Display value={value} />
+    </>
+  );
+}
+````
+
+* Realized: state should live in the closest common parent
+* This concept felt important but slightly tricky
+
+---
+
+### 04/15/26 (Wednesday)
+
+* Learned about **useEffect**
+* It runs side effects after render
+* Example: logging or fetching data
+
+```jsx
+import { useEffect } from "react";
+
+useEffect(() => {
+  console.log("Component rendered");
+}, []);
+```
+
+* Learned dependency array controls when it runs
+* Empty array = run once on mount
+* Without array = runs every render
+* Still a bit confusing when to use it
+
+---
+
+### 04/17/26 (Friday)
+
+* Explored **fetching data with useEffect**
+* Tried calling an API and storing result in state
+
+```jsx
+useEffect(() => {
+  fetch("https://api.example.com/data")
+    .then(res => res.json())
+    .then(data => setData(data));
+}, []);
+```
+
+* Learned about async behavior in React
+* Realized UI updates after data loads
+* Starting to understand real-world usage
+
+---
+
+### 04/19/26 (Yesterday)
+
+* Reviewed everything learned so far
+
+* Focused on connecting concepts together:
+
+  * props + state + events + effects
+
+* Noticed patterns:
+
+  * state = data
+  * props = passing data
+  * events = user interaction
+  * effects = side actions
+
+* Big realization:
+  React is about **data flowing through components**
+
+* Still unsure about:
+
+  * When to split components
+  * Best practices for useEffect
+
 ---
 
 ### Questions
-
-* How do I manage state across multiple components?
-* When should I use `useEffect`?
+* How do I structure larger apps with many components?
+* When should I create custom hooks?
+* How do I avoid messy useEffect logic?
 
 ---
 
 ### Next
 
-* Try building a small app with state, props, and events
-* Experiment with conditional rendering
+* Build a small project (todo app or weather app)
+* Practice lifting state and data flow
+* Try using useEffect with real APIs
+
+```
 
 ---
