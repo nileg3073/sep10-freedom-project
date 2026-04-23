@@ -1,7 +1,8 @@
 
 
-wireframe thingy https://wireframe.cc/WVeIJV
-
+* Computer - https://wireframe.cc/WVeIJV
+* Tablet - https://wireframe.cc/OAbG5F
+* Phone - https://wireframe.cc/BH1txn
 
 
 
