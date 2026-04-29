@@ -1,0 +1,14 @@
+   h1 {
+    font-weight: 100px;
+    font-family: Comic Relief;
+            }
+
+.hero {
+    text-align: center;
+    background-color: green;
+    padding: 150px;
+}
+
+.info {
+    text-align: center;
+}
