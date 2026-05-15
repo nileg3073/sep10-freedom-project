@@ -1,172 +1,658 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>Graphic Design - Nile Gibson</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <title>Title</title>
-    </head>
-    <body>
-        <!-- HTML -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
 
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Graphic Design</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Darks</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#info">Information</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
-<div class="hero">
-  <div class="hero-content">
-    <h1>Graphic Design</h1>
-    <p>The world behind modern art.</p>
-  </div>
-</div>
+</head>
 
-        <div class="context" id="info">
-            <h1>Contextual Information</h1>
-                <p>Graphic design is something I’ve always been interested in. It’s everywhere: logos, posters, apps, packaging. For this project, I wanted to go beyond the big names like Photoshop and Illustrator. I started looking into lesser-known tools that offer different features or are easier to use. These smaller apps are often free, open-source, or browser-based. Some are built for beginners and  others use AI to speed things up. I’m using this project to explore what’s out there and see how these tools work in real design tasks. This helps me figure out what kind of tools work best for me and where graphic design might be going in the future!</p>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+            Graphic Design
+        </a>
+
+        <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar">
+
+            <div class="offcanvas-header">
+
+                <h5 class="offcanvas-title">
+                    Darks
+                </h5>
+
+                <button type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas">
+                </button>
+
+            </div>
+
+            <div class="offcanvas-body">
+
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info">
+                            Information
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prototype">
+                            Prototype
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
 
         </div>
-  <div class="row">
-    <div class="col">
-       <div class="card" style="width: 18rem;">
-  <img src="img/phpyuodcu-logo.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Penpot</h5>
-    <p class="card-text">Open-source, browser-based design platform.upports SVG, CSS, and HTML for clean design-to-code workflows. Collaborative editing in real time for remote teams. Provides tools for wireframes, interactive components, and prototyping.</p>
-    <a href="https://penpot.app/" class="btn btn-primary">Application Link</a>
-  </div>
-</div>
+
     </div>
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-  <img src="img/akira.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Akira</h5>
-    <p class="card-text">Linux-native vector design and UI tool. Focused on UI/UX workflows and vector editing. Lightweight and open-source, alternative to Adobe or Figma.</p>
-    <a href="https://penpot.app/" class="btn btn-primary">Application Link</a>
-  </div>
-</div>
+
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Graphic Design
+        </h1>
+
+        <p>
+            The world behind modern art.
+        </p>
+
     </div>
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-  <img src="img/phpyuodcu-logo.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Penpot</h5>
-    <p class="card-text">Open-source, browser-based design platform.upports SVG, CSS, and HTML for clean design-to-code workflows. Collaborative editing in real time for remote teams. Provides tools for wireframes, interactive components, and prototyping.</p>
-    <a href="https://penpot.app/" class="btn btn-primary">Application Link</a>
-  </div>
+
 </div>
+
+<!-- CONTEXT -->
+<div class="context" id="info">
+
+    <div class="container">
+
+        <h1>
+            Contextual Information
+        </h1>
+
+        <p>
+            Graphic design is something I’ve always been interested in.
+            It’s everywhere: logos, posters, apps, packaging.
+            For this project, I wanted to go beyond the big names
+            like Photoshop and Illustrator.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- TECHNOLOGY -->
+<div class="Existing-tech">
+
+    <div class="container">
+
+        <h1>
+            Existing Technology: Graphic Design
+        </h1>
+
+    </div>
+
+</div>
+
+<!-- CARDS -->
+<div class="container py-4">
+
+    <div class="row g-4">
+
+        <!-- 1 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+
+            <div class="card h-100 hover-card">
+
+                <img src="img/phpyuodcu-logo.png"
+                    class="card-img-top p-2"
+                    alt="Penpot">
+
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title">
+                        Penpot
+                    </h5>
+
+                    <p class="card-text small">
+                        Open-source browser-based design platform.
+                    </p>
+
+                    <a href="https://penpot.app"
+                        class="btn btn-primary mt-auto">
+
+                        Application Link
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 2 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+
+            <div class="card h-100 hover-card">
+
+                <img src="img/akira.png"
+                    class="card-img-top p-2"
+                    alt="Akira">
+
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title">
+                        Akira
+                    </h5>
+
+                    <p class="card-text small">
+                        Linux-native vector design and UI tool.
+                    </p>
+
+                    <a href="https://penpot.app"
+                        class="btn btn-primary mt-auto">
+
+                        Application Link
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 3 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+
+            <div class="card h-100 hover-card">
+
+                <img src="img/lunacy.png"
+                    class="card-img-top p-2"
+                    alt="Lunacy">
+
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title">
+                        Lunacy
+                    </h5>
+
+                    <p class="card-text small">
+                        Free vector design tool supporting Figma formats.
+                    </p>
+
+                    <a href="https://icons8.com"
+                        class="btn btn-primary mt-auto">
+
+                        Application Link
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 4 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+
+            <div class="card h-100 hover-card">
+
+                <img src="img/download.png"
+                    class="card-img-top p-2"
+                    alt="RelayThat">
+
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title">
+                        RelayThat
+                    </h5>
+
+                    <p class="card-text small">
+                        Automated design platform for clean workflows.
+                    </p>
+
+                    <a href="https://relaythat.com"
+                        class="btn btn-primary mt-auto">
+
+                        Application Link
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 5 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+
+            <div class="card h-100 hover-card">
+
+                <img src="img/snappa.avif"
+                    class="card-img-top p-2"
+                    alt="Snappa">
+
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title">
+                        Snappa
+                    </h5>
+
+                    <p class="card-text small">
+                        Simplified graphic creation for social media.
+                    </p>
+
+                    <a href="https://snappa.com"
+                        class="btn btn-primary mt-auto">
+
+                        Application Link
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 6 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+
+            <div class="card h-100 hover-card">
+
+                <img src="img/vistacreate.webp"
+                    class="card-img-top p-2"
+                    alt="VistaCreate">
+
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title">
+                        VistaCreate
+                    </h5>
+
+                    <p class="card-text small">
+                        Drag-and-drop editor with AI features.
+                    </p>
+
+                    <a href="https://vista.com"
+                        class="btn btn-primary mt-auto">
+
+                        Application Link
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 7 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+
+            <div class="card h-100 hover-card">
+
+                <img src="img/images.png"
+                    class="card-img-top p-2"
+                    alt="Kittl">
+
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title">
+                        Kittl
+                    </h5>
+
+                    <p class="card-text small">
+                        Browser-based typography and vector tool.
+                    </p>
+
+                    <a href="https://www.kittl.com/"
+                        class="btn btn-primary mt-auto">
+
+                        Application Link
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 8 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+
+            <div class="card h-100 hover-card">
+
+                <img src="img/vectr.jpg"
+                    class="card-img-top p-2"
+                    alt="Vectr">
+
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title">
+                        Vectr
+                    </h5>
+
+                    <p class="card-text small">
+                        Free vector graphics software.
+                    </p>
+
+                    <a href="https://vectr.com/"
+                        class="btn btn-primary mt-auto">
+
+                        Application Link
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 9 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+
+            <div class="card h-100 hover-card">
+
+                <img src="img/gravit-designer.jpg"
+                    class="card-img-top p-2"
+                    alt="Gravit Designer">
+
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title">
+                        Gravit Designer
+                    </h5>
+
+                    <p class="card-text small">
+                        Cross-platform vector design app.
+                    </p>
+
+                    <a href="https://www.designer.io/"
+                        class="btn btn-primary mt-auto">
+
+                        Application Link
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- REACT MVP -->
+<div id="prototype" class="py-5">
+
+    <div id="react-app"></div>
+
+</div>
+
+<!-- REACT -->
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- REACT JSX -->
+<script type="text/babel">
+
+const { useState } = React;
+
+function GraphicDesignApp() {
+
+    const [text, setText] = useState("Your Design");
+    const [bgColor, setBgColor] = useState("#0d6efd");
+    const [textColor, setTextColor] = useState("#ffffff");
+    const [fontSize, setFontSize] = useState(48);
+
+    function resetDesign() {
+
+        setText("Your Design");
+        setBgColor("#0d6efd");
+        setTextColor("#ffffff");
+        setFontSize(48);
+
+    }
+
+    return (
+
+        <div className="container py-5">
+
+            <h1 className="text-center mb-4">
+                React Graphic Design MVP
+            </h1>
+
+            <div className="row">
+
+                <div className="col-lg-4 mb-4">
+
+                    <div className="card react-mvp-card p-4 shadow-sm">
+
+                        <h4>
+                            Design Controls
+                        </h4>
+
+                        <label className="mt-3">
+                            Design Text
+                        </label>
+
+                        <input
+                            type="text"
+                            className="form-control"
+                            value={text}
+                            onChange={(e) => setText(e.target.value)}
+                        />
+
+                        <label className="mt-3">
+                            Background Color
+                        </label>
+
+                        <input
+                            type="color"
+                            className="form-control form-control-color"
+                            value={bgColor}
+                            onChange={(e) => setBgColor(e.target.value)}
+                        />
+
+                        <label className="mt-3">
+                            Text Color
+                        </label>
+
+                        <input
+                            type="color"
+                            className="form-control form-control-color"
+                            value={textColor}
+                            onChange={(e) => setTextColor(e.target.value)}
+                        />
+
+                        <label className="mt-3">
+                            Font Size
+                        </label>
+
+                        <input
+                            type="range"
+                            min="20"
+                            max="100"
+                            value={fontSize}
+                            className="form-range"
+                            onChange={(e) => setFontSize(e.target.value)}
+                        />
+
+                        <button
+                            className="btn btn-danger mt-4"
+                            onClick={resetDesign}
+                        >
+
+                            Reset Design
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div className="col-lg-8">
+
+                    <div
+                        className="design-canvas shadow"
+                        style={{
+                            background: bgColor
+                        }}
+                    >
+
+                        <h1
+                            style={{
+                                color: textColor,
+                                fontSize: `${fontSize}px`
+                            }}
+                        >
+
+                            {text}
+
+                        </h1>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="react-explanation">
+
+                <h3>
+                    React & JSX Explanation
+                </h3>
+
+                <p>
+                    This prototype graphic design application was built
+                    using React and JSX concepts learned from React.dev.
+                </p>
+
+                <p>
+                    The project uses the useState hook to dynamically
+                    update the interface in real time.
+                </p>
+
+                <p>
+                    JSX was used to create reusable UI components and
+                    interactive controls similar to modern browser-based
+                    design software.
+                </p>
+
+            </div>
+
+        </div>
+
+    );
+
+}
+
+ReactDOM.createRoot(
+    document.getElementById("react-app")
+).render(<GraphicDesignApp />);
+
+</script>
+
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
     </div>
   </div>
 </div>
 
-
-
-
-
-        <div class="card" style="width: 18rem;">
-  <img src="img/phpyuodcu-logo.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Penpot</h5>
-    <p class="card-text">Open-source, browser-based design platform.upports SVG, CSS, and HTML for clean design-to-code workflows. Collaborative editing in real time for remote teams. Provides tools for wireframes, interactive components, and prototyping.</p>
-    <a href="https://penpot.app/" class="btn btn-primary">Application Link</a>
-  </div>
-</div>
-
-        <div class="card" style="width: 18rem;">
-  <img src="img/phpyuodcu-logo.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Penpot</h5>
-    <p class="card-text">Open-source, browser-based design platform.upports SVG, CSS, and HTML for clean design-to-code workflows. Collaborative editing in real time for remote teams. Provides tools for wireframes, interactive components, and prototyping.</p>
-    <a href="https://penpot.app/" class="btn btn-primary">Application Link</a>
-  </div>
-</div>
-
-        <div class="card" style="width: 18rem;">
-  <img src="img/phpyuodcu-logo.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Penpot</h5>
-    <p class="card-text">Open-source, browser-based design platform.upports SVG, CSS, and HTML for clean design-to-code workflows. Collaborative editing in real time for remote teams. Provides tools for wireframes, interactive components, and prototyping.</p>
-    <a href="https://penpot.app/" class="btn btn-primary">Application Link</a>
-  </div>
-</div>
-
-        <div class="card" style="width: 18rem;">
-  <img src="img/phpyuodcu-logo.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Penpot</h5>
-    <p class="card-text">Open-source, browser-based design platform.upports SVG, CSS, and HTML for clean design-to-code workflows. Collaborative editing in real time for remote teams. Provides tools for wireframes, interactive components, and prototyping.</p>
-    <a href="https://penpot.app/" class="btn btn-primary">Application Link</a>
-  </div>
-</div>
-
-        <div class="card" style="width: 18rem;">
-  <img src="img/phpyuodcu-logo.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Penpot</h5>
-    <p class="card-text">Open-source, browser-based design platform.upports SVG, CSS, and HTML for clean design-to-code workflows. Collaborative editing in real time for remote teams. Provides tools for wireframes, interactive components, and prototyping.</p>
-    <a href="https://penpot.app/" class="btn btn-primary">Application Link</a>
-  </div>
-</div>
-
-        <div class="card" style="width: 18rem;">
-  <img src="img/phpyuodcu-logo.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Penpot</h5>
-    <p class="card-text">Open-source, browser-based design platform.upports SVG, CSS, and HTML for clean design-to-code workflows. Collaborative editing in real time for remote teams. Provides tools for wireframes, interactive components, and prototyping.</p>
-    <a href="https://penpot.app/" class="btn btn-primary">Application Link</a>
-  </div>
-</div>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- <script src="script.js"></script> -->
-        <script>
-            // JS
-
-
-        </script>
-    </body>
+</body>
 </html>

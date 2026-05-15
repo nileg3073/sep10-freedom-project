@@ -1,16 +1,16 @@
 # Presentation Plan
 
 ## Hook
-* 
+Anyone here like Graphic Design?. c
 
 ## Product
-* 
+*
 
 ## Process
-* 
+*
 
 ## Conclusion
-* 
+*
 
 <!-- EXAMPLE
 

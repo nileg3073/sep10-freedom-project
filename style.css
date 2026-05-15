@@ -1,42 +1,221 @@
-h1 {
-  font-weight: 700;
-  font-family: 'Comic Relief', sans-serif;
-  font-size: 4rem;
-  margin-bottom: 10px;
+body {
+    font-family: "Comic Relief", system-ui;
+    background: #f5f5f5;
 }
+
+/* HERO */
 
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  width: 100%;
+    height: 100vh;
 
-  /* Background Image Setup */
-  background-image: url('img/graphic-design.jpg');
-  background-size: cover;      /* Scales image to fill the screen */
-  background-position: center; /* Centers the image vertically/horizontally */
-  background-repeat: no-repeat;
+    background-image: url("img/graphic-design.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-  /* Dark Overlay: Makes the white text much easier to read */
-  background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: overlay;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
 }
 
+/* Dark overlay */
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.45);
+}
+
+/* Keeps text above overlay */
 .hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    font-weight: bold;
 }
 
 .hero-content p {
-  font-size: 1.5rem;
-  opacity: 0.9;
+    font-size: 1.5rem;
 }
 
+/* CONTEXT */
+
 .context {
-  text-align: center;
+    padding: 80px 0;
+    background: white;
+}
+
+.context h1 {
+    margin-bottom: 20px;
+}
+
+/* EXISTING TECH */
+
+.Existing-tech {
+    padding: 60px 0 20px;
+    text-align: center;
+}
+
+/* CARDS */
+
+.hover-card {
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+    border: 1px solid #dee2e6;
+}
+
+.hover-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+
+    border-color: #0d6efd;
+}
+
+.card img {
+    height: 220px;
+    object-fit: contain;
+}
+
+/* REACT MVP */
+
+.design-canvas {
+
+    width: 100%;
+    min-height: 500px;
+
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease;
+
+    overflow: hidden;
+
+    padding: 20px;
+}
+
+.design-canvas h1 {
+
+    font-weight: bold;
+
+    text-align: center;
+
+    padding: 20px;
+
+    transition: all 0.3s ease;
+
+    word-break: break-word;
+}
+
+.react-mvp-card {
+
+    border: none;
+
+    border-radius: 16px;
+
+    background: white;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.react-mvp-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.react-mvp-card input[type="text"] {
+    border-radius: 10px;
+}
+
+.react-mvp-card input[type="color"] {
+
+    width: 100%;
+    height: 50px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.react-mvp-card .btn {
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+.react-mvp-card .btn:hover {
+    transform: scale(1.02);
+}
+
+/* EXPLANATION */
+
+.react-explanation {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    margin-top: 40px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.react-explanation h3 {
+
+    margin-bottom: 20px;
+
+    font-weight: bold;
+}
+
+.react-explanation p {
+
+    line-height: 1.7;
+
+    color: #444;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .design-canvas {
+        min-height: 300px;
+    }
+
+    .design-canvas h1 {
+        font-size: 2rem !important;
+    }
+
 }
