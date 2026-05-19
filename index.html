@@ -61,27 +61,32 @@
 
             <div class="offcanvas-body">
 
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            Home
-                        </a>
-                    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="#">
+            Home
+        </a>
+    </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#info">
-                            Information
-                        </a>
-                    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#info">
+            Information
+        </a>
+    </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#prototype">
-                            Prototype
-                        </a>
-                    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#prototype">
+            Prototype
+        </a>
+    </li>
 
-                </ul>
+    <li class="nav-item">
+        <a class="nav-link" href="#faq">
+            FAQ
+        </a>
+    </li>
+</ul>
 
             </div>
 
@@ -481,7 +486,7 @@ function GraphicDesignApp() {
         <div className="container py-5">
 
             <h1 className="text-center mb-4">
-                React Graphic Design MVP
+                Minimum Viable Product: Graphic Design (React.dev)
             </h1>
 
             <div className="row">
@@ -615,44 +620,104 @@ ReactDOM.createRoot(
 
 </script>
 
-<div class="accordion" id="accordionPanelsStayOpenExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-      <div class="accordion-body">
-        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+<div class="container py-5" id="faq">
+
+  <h1 class="text-center mb-4">
+    FAQ - Questions you may have?
+  </h1>
+
+  <div class="row justify-content-center">
+
+    <div class="col-lg-6">
+
+      <div class="accordion" id="faqAccordion">
+
+        <div class="accordion-item">
+
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#q1"
+              aria-expanded="true">
+              How long did it take you to make this website?
+            </button>
+          </h2>
+
+          <div id="q1" class="accordion-collapse collapse show"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              It took me a few days to design and build the structure, then extra time to refine the layout, cards, and React MVP section.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#q2"
+              aria-expanded="false">
+              How was your MVP created?
+            </button>
+          </h2>
+
+          <div id="q2" class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              The MVP was built using React with useState hooks to dynamically update text, colors, and font size in real time.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#q3"
+              aria-expanded="false">
+              Why did you choose this topic?
+            </button>
+          </h2>
+
+          <div id="q3" class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              I chose graphic design because it connects creativity and technology, and it’s something I see everywhere in real life like apps, logos, and websites.
+            </div>
+          </div>
+
+        </div>
+
       </div>
+
     </div>
+
   </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-      <div class="accordion-body">
-        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-      <div class="accordion-body">
-        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
+
 </div>
 
+<footer id="footer" class="text-center py-4 mt-5 bg-dark text-white">
+
+  <div class="container">
+
+    <p class="mb-2">
+      © 2026 Nile Gibson — SEP10 Freedom Project
+    </p>
+
+    <a
+      href="https://github.com/YOUR-USERNAME/sep10-freedom"
+      target="_blank"
+      class="text-info fw-bold"
+    >
+      🔗 View My Forked Repo
+    </a>
+
+  </div>
+
+</footer>
 </body>
 </html>
