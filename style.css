@@ -303,3 +303,20 @@ body {
 
     font-size: 0.95rem;
 }
+
+/* SECTION OVERVIEW TEXT */
+
+.section-overview {
+
+    max-width: 850px;
+
+    margin: 0 auto 40px;
+
+    text-align: center;
+
+    line-height: 1.8;
+
+    color: #444;
+
+    font-size: 1.05rem;
+}
